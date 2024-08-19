@@ -68,7 +68,8 @@ header {
 header > h1 {
   font-size: 64px;
   margin: 0px;
-  display: inline-block;
+  display: inline-flex;
+  align-self: center;
 }
 header > a {
   align-self: center;
