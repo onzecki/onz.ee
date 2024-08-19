@@ -41,7 +41,6 @@ body {
 }
 
 header {
-  padding: 2vh 2vw 2vh 2vw;
   border-bottom: 4px solid var(--plum);
   border-radius: 0px;
   display: flex;
@@ -88,6 +87,21 @@ header > h1 {
   height: 48px;
   align-self: center;
   fill: var(--foreground);
+}
+#theme-switcher {
+  aspect-ratio: 1/1;
+  background-image: linear-gradient(
+    to right,
+    var(--plum) 15%,
+    color-mix(in srgb, transparent, var(--violet)) 85%
+  );
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+#theme-switcher > svg {
+  fill: none;
 }
 main {
   display: flex;
