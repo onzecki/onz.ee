@@ -840,6 +840,28 @@ main > div {
     inset;
 }
 
+#theme-switcher {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  border: 1px solid var(--plum);
+  border-image-source: linear-gradient(
+    to left,
+    var(--plum),
+    var(--blue),
+    var(--violet)
+  );
+  height: 10vh;
+  border-image-slice: 1;
+  background: linear-gradient(
+    to left,
+    color-mix(in srgb, transparent 75%, var(--plum)),
+    color-mix(in srgb, transparent 75%, var(--blue)),
+    color-mix(in srgb, transparent 75%, var(--violet))
+  );
+  margin: 16px;
+}
 #right {
   flex: 15%;
 }
