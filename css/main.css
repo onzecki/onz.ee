@@ -71,7 +71,7 @@ header > h1 {
   display: inline-flex;
   align-self: center;
 }
-header > a {
+.header-icon {
   align-self: center;
   text-decoration: none;
   height: 64px;
@@ -80,11 +80,11 @@ header > a {
   border-left: 4px solid var(--plum);
   display: flex;
 }
-header > a > img {
+.header-icon > img {
   height: 48px;
   align-self: center;
 }
-header > a > svg {
+.header-icon > svg {
   height: 48px;
   align-self: center;
   fill: var(--foreground);
