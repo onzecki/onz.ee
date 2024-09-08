@@ -1,0 +1,185 @@
+:root {
+    --violet: #7367cb;
+    --blue: #4841c8;
+    --plum: #871975;
+    --background: #060413;
+    --foreground: #eceafb;
+  }
+  @font-face {
+    font-family: "Monofoki";
+    src: url("../assets/fonts/Monofoki-Regular.woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Sometype Mono";
+    src: url("../assets/fonts/SometypeMono-Bold.woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  a:link {
+    color: color-mix(in srgb, var(--violet), var(--foreground));
+  }
+  a:visited {
+    color: color-mix(in srgb, var(--blue), var(--foreground));
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    min-height: 100%;
+  }
+  
+  body {
+    height: 100vh;
+    min-width: 100%;
+    margin: 0px;
+    background-color: var(--background);
+    color: var(--foreground);
+    scroll-behavior: smooth;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    padding: 2vh 2vw 2vh 2vw;
+    border-bottom: 4px solid var(--plum);
+    border-radius: 0px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    background-color: color-mix(in srgb, var(--background), transparent 50%);
+    background: linear-gradient(
+      to top,
+      color-mix(in srgb, var(--plum), transparent 75%),
+      color-mix(in srgb, var(--background), transparent 50%)
+    );
+    backdrop-filter: blur(8px);
+    -moz-backdrop-filter: blur(8px);
+    font-family: "Sometype Mono";
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+    top: 0;
+    z-index: 5;
+  }
+  header > h1 {
+    font-size: 64px;
+    margin: 0px;
+    display: inline-flex;
+    align-self: center;
+  }
+  .header-icon {
+    align-self: center;
+    text-decoration: none;
+    height: 64px;
+    padding-left: 2vw;
+    margin-left: 2vw;
+    border-left: 4px solid var(--plum);
+    display: flex;
+  }
+  .header-icon > img {
+    height: 48px;
+    align-self: center;
+  }
+  .header-icon > svg {
+    height: 48px;
+    align-self: center;
+    fill: var(--foreground);
+  }
+  main {
+    display: flex;
+    font-family: Monofoki;
+    flex-direction: row;
+    height: auto;
+  }
+  #middle > * {
+    align-self: center;
+    text-align: center;
+    margin: 0px;
+  }
+  #middle > h3 {
+    font-size: 36px;
+    margin: 32px 16px 0px 16px;
+    font-family: 'Sometype Mono';
+  }
+  #middle > h1{
+    font-size: 196px;
+    margin-bottom: 32px;
+    font-family: 'Sometype Mono';
+    background: linear-gradient(var(--plum) 25%, var(--violet) 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #middle > h2{
+    font-size: 48px;
+  }
+  #left {
+    flex: 15%;
+  }
+  #middle {
+    flex: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #right {
+    flex: 15%;
+  }
+  footer {
+    margin-top: auto;
+    border-top: 4px dashed var(--plum);
+    font-family: Monofoki;
+    padding: 0px 2vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: min-content;
+    justify-self: flex-end;
+  }
+  footer > p {
+    justify-self: center;
+    margin: 0.5vw;
+  }
+  footer > p > a {
+    cursor: pointer;
+    color: color-mix(in srgb, var(--foreground), var(--plum));
+    text-decoration: underline;
+  }
+  footer > p > span {
+    cursor: pointer;
+    color: color-mix(in srgb, var(--foreground), var(--plum));
+    text-decoration: underline;
+  }
+  #plausible-info {
+    display: none;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --background: #eceafb;
+      --foreground: #060413;
+    }
+  }
+  @media (prefers-color-scheme: no-preference) {
+    :root {
+      --foreground: #eceafb;
+      --background: #060413;
+    }
+  }
+  @media (max-aspect-ratio: 1/1) {
+    #left {
+      display: none;
+    }
+    #right {
+      display: none;
+    }
+    main {
+      flex-direction: column;
+    }   
+  }
+  
