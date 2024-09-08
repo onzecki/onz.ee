@@ -849,6 +849,12 @@ footer > p > span {
     --foreground: #060413;
   }
 }
+@media (prefers-color-scheme: no-preference) {
+  :root {
+    --foreground: #eceafb;
+    --background: #060413;
+  }
+}
 @media (max-aspect-ratio: 1/1) {
   #left {
     display: none;
