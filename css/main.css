@@ -55,7 +55,6 @@ header {
     color-mix(in srgb, var(--background), transparent 50%)
   );
   backdrop-filter: blur(8px);
-  -moz-backdrop-filter: blur(8px);
   font-family: "Sometype Mono";
   width: -moz-available;
   width: -webkit-fill-available;
