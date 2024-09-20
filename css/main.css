@@ -100,7 +100,7 @@ main > div {
   display: inline-flex;
   align-self: center;
 }
-.eeto > img,
+.eeto > picture > img,
 .my-icon {
   width: 88px;
   height: 31px;
@@ -563,7 +563,8 @@ main > div {
   margin-left: 16px;
   align-self: center;
 }
-.showcase-item > img,
+.showcase-item > picture,
+.showcase-item > picture > img,
 .showcase-item > a {
   align-self: center;
   margin-left: 16px;
@@ -703,7 +704,7 @@ main > div {
   margin: 0px;
 }
 .contact-field > p,
-.contact-field > a > img,
+.contact-field > a > picture > img,
 .contact-field > a {
   margin-left: 16px;
   align-self: center;
