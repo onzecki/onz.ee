@@ -1,13 +1,13 @@
-window.onload = function () {
+window.onload = () => {
   document.getElementById("plausible-info").style.display = "block";
-  if ((localStorage.getItem("manually_set_tracking_preference") !== "true") && localStorage.getItem("plausible_ignore") !== "true" && Navigator.doNotTrack === 1) {
+  if ((localStorage.getItem("manually_set_tracking_preference") !== "true") && (localStorage.getItem("plausible_ignore") !== "true") && (Navigator.doNotTrack === 1)) {
     switchTracking();
   }
 };
 
 const isReducedMotion =
-  window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
-  window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+  window.matchMedia("(prefers-reduced-motion: reduce)") === true ||
+  window.matchMedia("(prefers-reduced-motion: reduce)").matches === true;
 const header = document.getElementsByTagName("header")[0];
 
 if (!isReducedMotion) {
@@ -46,26 +46,26 @@ checkOpted();
 
 function changingLetters() {
   const titleLetters = document.querySelectorAll(".title-letter");
-  titleLetters.forEach((letter) => {
+  for (const letter of titleLetters) {
     letter.setAttribute("data-letter", letter.textContent);
-  });
-  titleLetters.forEach((letter) => {
-    let speed = 30;
-    letter.addEventListener("mouseover", function () {
-      rng = setInterval(function () {
+  }
+  for (const letter of titleLetters) {
+    const speed = 30;
+    letter.addEventListener("mouseover", () => {
+      rng = setInterval(() => {
         const randomCharCode = Math.floor(Math.random() * 26) + 97;
         const randomLetter = String.fromCharCode(randomCharCode);
         letter.textContent = randomLetter;
       }, speed);
     });
-    letter.addEventListener("mouseout", function () {
+    letter.addEventListener("mouseout", () => {
       clearInterval(rng);
       if (!Math.floor(Math.random() * 5)) {
         return;
       }
-      setTimeout(function () {
+      setTimeout(() => {
         letter.textContent = letter.getAttribute("data-letter");
       }, speed);
     });
-  });
+  }
 }
