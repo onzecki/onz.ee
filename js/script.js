@@ -42,7 +42,6 @@ function switchTracking() {
   } else {
     localStorage.setItem("plausible_ignore", "true");
   }
-  console.log(localStorage.plausible_ignore);
   checkOpted();
 }
 
