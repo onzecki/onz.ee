@@ -15,7 +15,7 @@ checkOpted();
 
 function checkOpted() {
   const link = document.querySelector("#plausible-info > span");
-  if (localStorage.getItem("plausible_ignore") == "true") {
+  if (localStorage.getItem("plausible_ignore") === "true") {
     link.innerHTML = "opt in to tracking!";
   } else {
     link.innerHTML = "opt out of tracking!";
@@ -23,7 +23,7 @@ function checkOpted() {
 }
 
 function optOut() {
-  if (localStorage.getItem("plausible_ignore") == "true") {
+  if (localStorage.getItem("plausible_ignore") === "true") {
     localStorage.setItem("plausible_ignore", "false");
   } else {
     localStorage.setItem("plausible_ignore", "true");
