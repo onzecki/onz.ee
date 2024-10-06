@@ -1,6 +1,10 @@
 window.onload = () => {
   document.getElementById("plausible-info").style.display = "block";
-  if ((localStorage.getItem("manually_set_tracking_preference") !== "true") && (localStorage.getItem("plausible_ignore") !== "true") && (Navigator.doNotTrack === 1)) {
+  if (
+    localStorage.getItem("manually_set_tracking_preference") !== "true" &&
+    localStorage.getItem("plausible_ignore") !== "true" &&
+    navigator.doNotTrack === "1"
+  ) {
     switchTracking();
   }
 };
