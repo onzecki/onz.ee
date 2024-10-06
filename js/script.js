@@ -1,5 +1,8 @@
 window.onload = function () {
   document.getElementById("plausible-info").style.display = "block";
+  if ((localStorage.getItem("manually_set_tracking_preference") !== "true") && localStorage.getItem("plausible_ignore") !== "true" && Navigator.doNotTrack === 1) {
+    switchTracking();
+  }
 };
 
 const isReducedMotion =
@@ -23,6 +26,13 @@ function checkOpted() {
 }
 
 function optOut() {
+  if (localStorage.getItem("manually_set_tracking_preference") !== "true") {
+    localStorage.setItem("manually_set_tracking_preference", "true");
+  }
+  switchTracking();
+}
+
+function switchTracking() {
   if (localStorage.getItem("plausible_ignore") === "true") {
     localStorage.setItem("plausible_ignore", "false");
   } else {
@@ -31,6 +41,8 @@ function optOut() {
   console.log(localStorage.plausible_ignore);
   checkOpted();
 }
+
+checkOpted();
 
 function changingLetters() {
   const titleLetters = document.querySelectorAll(".title-letter");
