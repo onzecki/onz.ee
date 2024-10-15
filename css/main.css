@@ -7,14 +7,18 @@
 }
 @font-face {
   font-family: "Monofoki";
-  src: url("../assets/fonts/Monofoki-Regular.woff2");
+  src: local("Monofoki"), 
+  url("../assets/fonts/Monofoki-Regular.woff2"),
+  url("https://onz.ee/assets/fonts/Monofoki-Regular.woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Sometype Mono";
-  src: url("../assets/fonts/SometypeMono-Bold.woff2");
+  src: local("Sometype Mono"), 
+  url("../assets/fonts/SometypeMono-Bold.woff2"),
+  url("https://onz.ee/assets/fonts/SometypeMono-Bold.woff2");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -55,7 +59,7 @@ header {
     color-mix(in srgb, var(--background), transparent 50%)
   );
   backdrop-filter: blur(8px);
-  font-family: "Sometype Mono";
+  font-family: "Sometype Mono", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   width: -moz-available;
   width: -webkit-fill-available;
   width: fill-available;
@@ -88,7 +92,7 @@ header > h1 {
 }
 main {
   display: flex;
-  font-family: Monofoki;
+  font-family: "Monofoki", 'Courier New', Courier, monospace, Arial, Helvetica, sans-serif;
   flex-direction: row;
 }
 main > div {
@@ -223,7 +227,7 @@ main > div {
 #about-me-title > h2 {
   align-self: center;
   letter-spacing: -6px;
-  font-family: "Sometype Mono";
+  font-family: "Sometype Mono", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 72px;
   cursor: default;
   margin-bottom: 0px;
@@ -255,7 +259,7 @@ main > div {
 }
 #decentralization-title {
   font-size: 24px;
-  font-family: "Sometype Mono";
+  font-family: "Sometype Mono", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #decentralization-content {
   padding: 16px;
@@ -310,7 +314,7 @@ main > div {
   justify-content: center;
 }
 #fun-facts-title {
-  font-family: "Sometype Mono";
+  font-family: "Sometype Mono", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 32px;
   text-align: center;
 }
@@ -329,7 +333,7 @@ main > div {
 }
 .fun-facts-box > p > em {
   font-style: normal;
-  font-family: "Sometype Mono";
+  font-family: "Sometype Mono", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .fun-facts-box > a {
   margin-left: 8px;
@@ -437,7 +441,7 @@ main > div {
 #i-do-title > h2 {
   align-self: center;
   letter-spacing: -8px;
-  font-family: "Sometype Mono";
+  font-family: "Sometype Mono", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 96px;
   cursor: default;
 }
@@ -556,7 +560,7 @@ main > div {
   );
 }
 .showcase-item > h4 {
-  font-family: "Sometype Mono";
+  font-family: "Sometype Mono", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 20px;
 }
 .showcase-item > p {
@@ -688,7 +692,7 @@ main > div {
 }
 
 #contact-section > h2 {
-  font-family: "Sometype Mono";
+  font-family: "Sometype Mono", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 32px;
   text-align: center;
 }
@@ -818,7 +822,7 @@ main > div {
 }
 footer {
   border-top: 4px dashed var(--plum);
-  font-family: Monofoki;
+  font-family: "Monofoki", 'Courier New', Courier, monospace, Arial, Helvetica, sans-serif;
   padding: 0px 2vw;
   display: flex;
   justify-content: center;
