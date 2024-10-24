@@ -66,7 +66,7 @@ header {
   z-index: 5;
 }
 header > h1 {
-  font-size: 64px;
+  font-size: 4em;
   margin: 0px;
   display: inline-flex;
   align-self: center;
@@ -150,14 +150,14 @@ main > div {
 }
 #introductory-name > p {
   align-self: center;
-  font-size: 32px;
+  font-size: 2em;
   margin: 0px;
   cursor: default;
 }
 #introductory-name h2 {
   position: relative;
   align-self: center;
-  font-size: 128px;
+  font-size: 8em;
   margin: 0;
   background: linear-gradient(var(--plum) 25%, var(--violet) 75%);
   -webkit-background-clip: text;
@@ -191,7 +191,7 @@ main > div {
 #introductory-welcome > p {
   color: color-mix(in srgb, transparent, var(--foreground));
   margin: 0px;
-  font-size: 48px;
+  font-size: 3em;
   align-self: center;
   cursor: default;
   letter-spacing: 24px;
@@ -229,17 +229,17 @@ main > div {
   align-self: center;
   letter-spacing: -6px;
   font-family: "Sometype Mono", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 72px;
+  font-size: 4.5em;
   cursor: default;
   margin-bottom: 0px;
 }
 #about-me-title > p {
-  font-size: 24px;
+  font-size: 1.5em;
   margin: 16px;
 }
 #foss-stuff {
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5em;
   margin-bottom: 16px;
 }
 #decentralization {
@@ -259,7 +259,7 @@ main > div {
   text-align: center;
 }
 #decentralization-title {
-  font-size: 24px;
+  font-size: 1.5em;
   font-family: "Sometype Mono", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #decentralization-content {
@@ -299,7 +299,7 @@ main > div {
 }
 #add-on {
   text-align: center;
-  font-size: 12px;
+  font-size: 0.75em;
   margin: 16px;
 }
 #music{
@@ -366,7 +366,7 @@ main > div {
 }
 #fun-facts-title {
   font-family: "Sometype Mono", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 32px;
+  font-size: 2em;
   text-align: center;
 }
 .fun-facts-box {
@@ -378,7 +378,7 @@ main > div {
     transparent
   );
   padding: 0px 24px;
-  font-size: 24px;
+  font-size: 1.5em;
   display: inline-flex;
   align-self: center;
 }
@@ -394,7 +394,7 @@ main > div {
   text-shadow: 0px 0px 5px var(--plum);
 }
 #ideology-box > p {
-  font-size: 16px;
+  font-size: 1em;
   padding-top: 16px;
   border-top: 1px solid var(--plum);
 }
@@ -430,7 +430,7 @@ main > div {
   flex-grow: 2;
   display: flex;
   justify-content: center;
-  font-size: 24px;
+  font-size: 1.5em;
   border-radius: 32px 0px 0px 0px;
   border-top: 1px solid var(--plum);
   border-left: 1px solid var(--blue);
@@ -463,7 +463,7 @@ main > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 24px;
+  font-size: 1.5em;
   border-right: 1px solid var(--blue);
   border-bottom: 1px solid var(--plum);
   border-radius: 0px 0px 32px 0px;
@@ -493,7 +493,7 @@ main > div {
   align-self: center;
   letter-spacing: -8px;
   font-family: "Sometype Mono", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 96px;
+  font-size: 6em;
   cursor: default;
 }
 #i-do-title > h2 > span:last-child {
@@ -512,12 +512,12 @@ main > div {
   align-self: center;
 }
 .interests-title {
-  font-size: 48px;
+  font-size: 3em;
   align-self: center;
   text-align: center;
 }
 #development-box {
-  font-size: 24px;
+  font-size: 1.5em;
   display: flex;
   flex-direction: column;
   width: 66%;
@@ -579,7 +579,7 @@ main > div {
 }
 #development-additional {
   align-self: center;
-  font-size: 24px;
+  font-size: 1.5em;
   padding: 0 10%;
   text-align: center;
 }
@@ -612,7 +612,7 @@ main > div {
 }
 .showcase-item > h4 {
   font-family: "Sometype Mono", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 20px;
+  font-size: 1.25em;
 }
 .showcase-item > p {
   margin-left: 16px;
@@ -625,14 +625,14 @@ main > div {
   margin-left: 16px;
 }
 #gaming-title {
-  font-size: 48px;
+  font-size: 3em;
   align-self: center;
 }
 #gaming-text {
   border-radius: 48px;
   padding: 16px;
   margin: 16px;
-  font-size: 20px;
+  font-size: 1.25em;
   text-align: center;
   border-top: 1px solid var(--plum);
   border-bottom: 1px solid var(--plum);
@@ -648,7 +648,7 @@ main > div {
     );
 }
 #others-title {
-  font-size: 48px;
+  font-size: 3em;
   align-self: center;
 }
 #others-box {
@@ -664,7 +664,7 @@ main > div {
   background-color: color-mix(in srgb, var(--background), var(--violet) 10%);
 }
 .others-panel > h4 {
-  font-size: 20px;
+  font-size: 1.25em;
 }
 #others-box-top {
   display: flex;
@@ -743,7 +743,7 @@ main > div {
 
 #contact-section > h2 {
   font-family: "Sometype Mono", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 32px;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -774,7 +774,7 @@ main > div {
 #money > h2 {
   text-align: center;
   margin-bottom: 0;
-  font-size: 24px;
+  font-size: 1.5em;
 }
 
 #money > p {
@@ -820,7 +820,7 @@ main > div {
 
 #meta-title {
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5em;
 }
 
 #meta-box {
@@ -843,7 +843,7 @@ main > div {
 }
 
 #meta-box-middle > a:nth-child(3) {
-  font-size: 12px;
+  font-size: 0.75em;
 }
 
 #meta-box-right {
