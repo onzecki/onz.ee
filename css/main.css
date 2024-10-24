@@ -52,7 +52,6 @@ header {
   flex-direction: row;
   align-content: center;
   justify-content: center;
-  background-color: color-mix(in srgb, var(--background), transparent 50%);
   background: linear-gradient(
     to top,
     color-mix(in srgb, var(--plum), transparent 75%),
@@ -583,7 +582,6 @@ main > div {
   margin: 16px;
   font-size: 20px;
   text-align: center;
-  background-color: color-mix(in srgb, var(--background), var(--violet) 10%);
   border-top: 1px solid var(--plum);
   border-bottom: 1px solid var(--plum);
   background: linear-gradient(
