@@ -161,6 +161,7 @@ main > div {
   margin: 0;
   background: linear-gradient(var(--plum) 25%, var(--violet) 75%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 #introductory-name h2:after {
@@ -173,6 +174,7 @@ main > div {
   background: linear-gradient(var(--violet) 25%, var(--blue) 75%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 #introductory-name h2:hover:after {
   opacity: 100;
