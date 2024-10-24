@@ -302,6 +302,56 @@ main > div {
   font-size: 12px;
   margin: 16px;
 }
+#music{
+  padding: 16px;
+  background: linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--background), var(--blue) 10%),
+    transparent,
+    color-mix(in srgb, var(--background), var(--blue) 10%)
+  );
+  border-top: 1px solid var(--blue);
+  border-bottom: 1px solid var(--blue);
+  text-align: center;
+}
+#music-box{
+  padding: 16px;
+  border: 1px solid var(--plum);
+  border-radius: 48px;
+  background: radial-gradient(ellipse at top, color-mix(in srgb, transparent, var(--plum) 10%), transparent),
+  radial-gradient(ellipse at bottom, color-mix(in srgb, transparent, var(--blue) 10%), transparent);
+  border-top-color: var(--blue);
+  border-bottom-color: var(--blue);
+}
+#music-main{
+  margin: 0px 16px 16px 16px;
+  padding: 0px 16px 16px 16px;
+  flex: 1;
+  border-bottom: 1px solid var(--blue);
+}
+#additional-artists{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+#additional-artists > div{
+  flex: 1;
+  margin: 8px;
+  margin-left: 0px;
+  padding-left: 8px;
+}
+#additional-artists > div + div{
+  border-left: 1px solid var(--plum);
+}
+.music-example{
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Sometype Mono", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+#current-fav-song-name{
+  font-weight: bold;
+  font-family: "Sometype Mono", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
+}
 #fun-facts {
   margin-top: 10%;
   border-top: 1px solid var(--violet);
@@ -903,6 +953,12 @@ footer > p > span {
     );
   }
   #religion {
+    margin: 16px;
+  }
+  .fun-facts-box{
+    width: 100%;
+  }
+  .fun-facts-box > p{
     margin: 16px;
   }
   #i-do-title {
