@@ -44,6 +44,17 @@ body {
   cursor: default;
 }
 
+#skip-to-content{
+  color: var(--background);
+  font-size: 0px;
+}
+#skip-to-content:focus{
+  color: var(--foreground);
+  font-size: 1.5em;
+  font-family: "Monofoki", 'Courier New', Courier, monospace, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
 header {
   padding: 2vh 2vw 2vh 2vw;
   border-bottom: 4px solid var(--plum);
