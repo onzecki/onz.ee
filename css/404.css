@@ -7,14 +7,18 @@
   }
   @font-face {
     font-family: "Monofoki";
-    src: url("../assets/fonts/Monofoki-Regular.woff2");
+    src: local("Monofoki"), 
+    url("../assets/fonts/Monofoki-Regular.woff2"),
+    url("https://onz.ee/assets/fonts/Monofoki-Regular.woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: "Sometype Mono";
-    src: url("../assets/fonts/SometypeMono-Bold.woff2");
+    src: local("Sometype Mono"), 
+    url("../assets/fonts/SometypeMono-Bold.woff2"),
+    url("https://onz.ee/assets/fonts/SometypeMono-Bold.woff2");
     font-weight: 800;
     font-style: normal;
     font-display: swap;
@@ -51,7 +55,6 @@
     flex-direction: row;
     align-content: center;
     justify-content: center;
-    background-color: color-mix(in srgb, var(--background), transparent 50%);
     background: linear-gradient(
       to top,
       color-mix(in srgb, var(--plum), transparent 75%),
@@ -59,7 +62,7 @@
     );
     backdrop-filter: blur(8px);
     -moz-backdrop-filter: blur(8px);
-    font-family: "Sometype Mono";
+    font-family: "Sometype Mono", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width: -moz-available;
     width: -webkit-fill-available;
     width: fill-available;
@@ -92,7 +95,7 @@
   }
   main {
     display: flex;
-    font-family: Monofoki;
+    font-family: "Monofoki", 'Courier New', Courier, monospace, Arial, Helvetica, sans-serif;
     flex-direction: row;
     height: auto;
   }
@@ -104,14 +107,15 @@
   #middle > h3 {
     font-size: 36px;
     margin: 32px 16px 0px 16px;
-    font-family: 'Sometype Mono';
+    font-family: "Sometype Mono", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   #middle > h1{
     font-size: 196px;
     margin-bottom: 32px;
-    font-family: 'Sometype Mono';
+    font-family: "Sometype Mono", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background: linear-gradient(var(--plum) 25%, var(--violet) 75%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   #middle > h2{
@@ -132,7 +136,7 @@
   footer {
     margin-top: auto;
     border-top: 4px dashed var(--plum);
-    font-family: Monofoki;
+    font-family: "Monofoki", 'Courier New', Courier, monospace, Arial, Helvetica, sans-serif;
     padding: 0px 2vw;
     display: flex;
     justify-content: center;
