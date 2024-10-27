@@ -1006,7 +1006,9 @@ footer > p > span {
     border-top: 1px solid var(--plum);
   }
   .fun-facts-box{
-    width: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
   }
   .fun-facts-box > p{
     margin: 16px;
