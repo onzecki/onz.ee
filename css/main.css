@@ -1000,7 +1000,6 @@ footer > p > span {
   #additional-artists{
     flex-direction: column;
     border-left: unset;
-    border-top: 
   }
   #additional-artists > div + div{
     border-left: unset;
