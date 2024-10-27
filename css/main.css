@@ -359,6 +359,15 @@ nav>a+a{
   flex: 1;
   border-bottom: 1px solid var(--blue);
 }
+.music-eeto{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.music-eeto > a{
+  margin-left: 8px;
+}
 #additional-artists{
   flex: 1;
   display: flex;
