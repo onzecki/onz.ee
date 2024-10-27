@@ -1011,6 +1011,7 @@ footer > p > span {
   }
   .fun-facts-box > p{
     margin: 16px;
+    text-align: center;
   }
   #i-do-title {
     mask-image: none;
