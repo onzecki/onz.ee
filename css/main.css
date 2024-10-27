@@ -964,6 +964,9 @@ footer > p > span {
   main {
     flex-direction: column;
   }
+  nav{
+    display: none;
+  }
   #i-am-box {
     width: 95%;
   }
@@ -993,6 +996,15 @@ footer > p > span {
   }
   #religion {
     margin: 16px;
+  }
+  #additional-artists{
+    flex-direction: column;
+    border-left: unset;
+    border-top: 
+  }
+  #additional-artists > div + div{
+    border-left: unset;
+    border-top: 1px solid var(--plum);
   }
   .fun-facts-box{
     width: 100%;
