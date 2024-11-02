@@ -347,6 +347,10 @@ nav>a+a{
   border-bottom: 1px solid var(--blue);
   text-align: center;
 }
+#music > h3{
+  font-family: "Sometype Mono", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.5em;
+}
 #music-box{
   padding: 16px;
   border: 1px solid var(--plum);
