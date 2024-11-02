@@ -794,24 +794,23 @@ nav>a+a{
   display: flex;
   margin-top: 8px;
   margin-bottom: 8px;
+  align-items: center;
+  text-align: center;
 }
-.contact-field > *,
-.contact-field > * > * {
+.contact-field > *{
   margin: 0px;
+  margin-right: 16px;
 }
-.contact-field > p,
-.contact-field > a > picture > img,
-.contact-field > a {
-  margin-left: 16px;
-  align-self: center;
+.contact-field > p{
   word-wrap: anywhere;
 }
 
-#socmed-rant {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
+ .contact-field > .eeto{
+  margin-left: auto;
+ }
+ .contact-field > .eeto + .eeto{
+  margin-left: 0px;
+ }
 
 #money > h2 {
   text-align: center;
@@ -1034,4 +1033,7 @@ footer > p > span {
   .contact-field {
     flex-direction: column;
   }
+  .contact-field > .eeto{
+    margin-left: unset;
+   }
 }
