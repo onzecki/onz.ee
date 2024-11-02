@@ -779,8 +779,8 @@ nav>a+a{
 
 #contact-section {
   border-top: 1px dashed var(--violet);
-  background: linear-gradient(
-    to top,
+  background: radial-gradient(
+    ellipse at bottom,
     transparent,
     color-mix(in srgb, var(--violet), transparent 75%)
   );
