@@ -231,27 +231,6 @@ main > div {
 }
 #scroll-down > svg {
   align-self: center;
-}
-nav{
-  flex: 1;
-  width: 100%;
-  display: flex;
-  border-top: 1px solid var(--plum);
-  border-bottom: 1px solid var(--plum);
-  background: radial-gradient(ellipse at bottom, color-mix(in srgb, var(--plum) 10%, transparent),
-   transparent);
-  padding: 16px;
-  align-items: center;
-}
-nav>a{
-  padding: 16px;
-  flex:1;
-  text-align: center;
-  font-size: 1.25em;
-  color: var(--plum) !important;
-  font-family: "Sometype Mono", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
-}
-nav>a+a{
   border-left: 1px solid var(--plum);
 }
 #about-me-title {
@@ -969,9 +948,6 @@ footer > p > span {
   }
   main {
     flex-direction: column;
-  }
-  nav{
-    display: none;
   }
   #i-am-box {
     width: 95%;
