@@ -62,8 +62,6 @@ header {
   padding: 2vh 2vw 2vh 2vw;
   border-bottom: 4px solid var(--plum);
   border-radius: 0px;
-  display: flex;
-  flex-direction: row;
   align-content: center;
   justify-content: center;
   background: linear-gradient(
@@ -104,9 +102,7 @@ header > h1 {
   fill: var(--foreground);
 }
 main {
-  display: flex;
   font-family: "Monofoki", 'Courier New', Courier, monospace, Arial, Helvetica, sans-serif;
-  flex-direction: row;
 }
 main > div {
   min-height: 50vw;
@@ -123,29 +119,27 @@ main > div {
   height: 31px;
   image-rendering: pixelated;
 }
-.section {
+.flex-column {
   display: flex;
   flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
 }
 #left {
   flex: 15%;
 }
 #middle {
   flex: 70%;
-  display: flex;
-  flex-direction: column;
 }
 #initial-box {
   margin: 5%;
   flex-grow: 3;
-  display: flex;
-  flex-direction: column;
   min-height: 85vh;
 }
 #introductory-row {
   flex-grow: 2;
-  display: flex;
-  flex-direction: row;
   width: 100%;
 }
 #introductory-name {
@@ -158,8 +152,6 @@ main > div {
   border-width: 1px;
   border-style: solid;
   border-image: linear-gradient(to bottom, transparent, var(--violet)) 1;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 #introductory-name > p {
@@ -218,8 +210,6 @@ main > div {
 }
 #scroll-down {
   flex-grow: 1;
-  display: flex;
-  flex-direction: column;
   align-content: center;
   background: linear-gradient(
     to top,
@@ -359,8 +349,6 @@ main > div {
 }
 #additional-artists{
   flex: 1;
-  display: flex;
-  flex-direction: row;
 }
 #additional-artists > div{
   flex: 1;
@@ -388,8 +376,6 @@ main > div {
     color-mix(in srgb, var(--background), var(--violet) 10%),
     transparent
   );
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 #fun-facts-title {
@@ -443,16 +429,12 @@ main > div {
 #i-am-box {
   margin: 0% 5% 5% 5%;
   flex-grow: 3;
-  display: flex;
-  flex-direction: column;
   min-height: 128px;
   width: 66%;
   align-self: center;
 }
 #i-am-box-top {
   flex-grow: 1;
-  display: flex;
-  flex-direction: row;
 }
 #i-am-box-top-left {
   flex-grow: 2;
@@ -480,7 +462,6 @@ main > div {
 #i-am-box-bottom {
   flex-grow: 1;
   display: flex;
-  flex-direction: row;
 }
 #i-am-box-bottom-left {
   flex-grow: 1;
@@ -488,8 +469,6 @@ main > div {
 }
 #i-am-box-bottom-right {
   flex-grow: 2;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   font-size: 1.5em;
   border-right: 1px solid var(--blue);
@@ -532,8 +511,6 @@ main > div {
     -24px 0px var(--plum);
 }
 #idk-where-to-start {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 #idk-where-to-start > p {
@@ -546,8 +523,6 @@ main > div {
 }
 #development-box {
   font-size: 1.5em;
-  display: flex;
-  flex-direction: column;
   width: 66%;
   align-self: center;
 }
@@ -621,10 +596,6 @@ main > div {
   padding: 16px;
 }
 
-.showcase-box {
-  display: flex;
-  flex-direction: column;
-}
 .showcase-item {
   margin: 16px;
   padding-left: 16px;
@@ -680,8 +651,6 @@ main > div {
   align-self: center;
 }
 #others-box {
-  display: flex;
-  flex-direction: column;
   align-self: center;
   text-align: center;
 }
@@ -695,9 +664,7 @@ main > div {
   font-size: 1.25em;
 }
 #others-box-top {
-  display: flex;
   flex-grow: 1;
-  flex-direction: row;
   justify-content: center;
   border-left: 1px solid var(--blue);
   border-right: 1px solid var(--blue);
@@ -712,8 +679,6 @@ main > div {
 }
 #others-box-middle {
   flex-grow: 1;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 #others-box-middle-right {
@@ -739,8 +704,6 @@ main > div {
 }
 #others-box-bottom {
   flex-grow: 1;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   border-radius: 0px 0px 48px 48px;
   border-left: 1px solid var(--blue);
@@ -850,11 +813,6 @@ main > div {
   font-size: 1.5em;
 }
 
-#meta-box {
-  display: flex;
-  flex-direction: row;
-}
-
 #meta-box-left {
   flex: 1;
   border-radius: 48px 0px 0px 48px;
@@ -875,8 +833,6 @@ main > div {
 
 #meta-box-right {
   flex: 1;
-  display: flex;
-  flex-direction: column;
   border-radius: 0px 48px 48px 0px;
   border-top: 1px solid var(--plum);
   border-bottom: 1px solid var(--plum);
@@ -901,10 +857,8 @@ footer {
   border-top: 4px dashed var(--plum);
   font-family: "Monofoki", 'Courier New', Courier, monospace, Arial, Helvetica, sans-serif;
   padding: 0px 2vw;
-  display: flex;
   justify-content: center;
   text-align: center;
-  flex-direction: column;
   flex-wrap: wrap;
 }
 footer > p {
@@ -1006,8 +960,7 @@ footer > p > span {
     font-size: 10vh;
     padding: 10%;
   }
-  #meta-box {
-    display: flex;
+  #meta-box{
     flex-direction: column;
   }
   .meta-panel {

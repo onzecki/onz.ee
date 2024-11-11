@@ -28,7 +28,7 @@
 
 <body>
   <a id="skip-to-content" tabindex="0" href="#navbar">Skip to content</a>
-  <header>
+  <header class="flex-row">
     <h1 id="title">
       <span class="title-letter">o</span>
       <span class="title-letter">n</span>
@@ -53,12 +53,12 @@
       </svg>
     </a>
   </header>
-  <main>
+  <main class="flex-row">
     <div id="left"></div>
-    <div id="middle">
-      <div id="initial-box">
-        <div id="introductory-row">
-          <div class="panel" id="introductory-name">
+    <div id="middle" class="flex-column">
+      <div id="initial-box" class="flex-column">
+        <div id="introductory-row" class="flex-row">
+          <div class="panel flex-column" id="introductory-name">
             <p>I'm</p>
             <h2>onzecki</h2>
           </div>
@@ -66,7 +66,7 @@
             <p>welcome</p>
           </div>
         </div>
-        <div class="panel" id="scroll-down">
+        <div class="panel flex-column" id="scroll-down">
           <p>Scroll down for more information!</p>
           <svg width="24px" height="24px" viewbox="0 0 24 24" stroke-width="1.5" fill="none"
             xmlns="http://www.w3.org/2000/svg" color="currentColor">
@@ -77,7 +77,7 @@
         </div>
       </div>
       <!-- about me -->
-      <div class="section">
+      <div class="flex-column">
         <div id="about-me-title">
           <h2>Here's what you should know about me</h2>
           <p>
@@ -85,9 +85,9 @@
               talking to me...</small>
           </p>
         </div>
-        <div id="i-am-box">
-          <div id="i-am-box-top">
-            <div id="i-am-box-top-left" class="panel section">
+        <div id="i-am-box" class="flex-column">
+          <div id="i-am-box-top" class="flex-row">
+            <div id="i-am-box-top-left" class="panel flex-column">
               <p>I'm a cybersecurity student,</p>
               <a href="https://www.ibm.com/topics/cybersecurity" class="eeto">
                 <picture>
@@ -102,7 +102,7 @@
           </div>
           <div id="i-am-box-bottom">
             <div id="i-am-box-bottom-left"></div>
-            <div id="i-am-box-bottom-right" class="panel section">
+            <div id="i-am-box-bottom-right" class="panel flex-column">
               <p>and I'm European!</p>
               <a href="https://european-union.europa.eu/index_en" class="eeto">
                 <picture>
@@ -171,7 +171,7 @@
             </a>
           </div>
         </div>
-        <div id="ideology-section" class="section">
+        <div id="ideology-section" class="flex-column">
           <div id="ideology-box">
             <h3>Ideology-wise,</h3>
             <p>I'd describe myself as a
@@ -234,10 +234,10 @@
           anything, feel free to contact me!
         </aside>
         <!-- TODO: Add an insane amount of 88x31s for all of the artists here -->
-        <div id="music" class="section">
+        <div id="music" class="flex-column">
           <h3 id="music-title">My taste in music!</h3>
-          <div id="music-box" class="section">
-            <div id="music-main" class="section">
+          <div id="music-box" class="flex-column">
+            <div id="music-main" class="flex-column">
               <p>My music taste is quite varied - however, by far my favorite music genre is Breakcore!</p>
               <div class="music-eeto">
                 <a href="https://yewtu.be/watch?v=oXIHezYI7Zw" class="eeto">
@@ -350,7 +350,7 @@
                 </a>
               </div>
             </div>
-            <div id="additional-artists">
+            <div id="additional-artists" class="flex-row">
               <div id="experimental">
                 <p>I also like more experimental music overall think -<br><em class="music-example">Aphex
                     Twin.</em>
@@ -438,7 +438,7 @@
             </div>
           </div>
         </div>
-        <div id="fun-facts">
+        <div id="fun-facts" class="flex-column">
           <h3 id="fun-facts-title">
             <s>Fun</s>
             facts!
@@ -468,22 +468,22 @@
         </div>
       </div>
       <!-- interests -->
-      <div class="section">
+      <div class="flex-column">
         <div id="i-do-title">
           <h2>and I do a
             <span>l</span>o<span>t</span>
             of things!
           </h2>
         </div>
-        <div id="idk-where-to-start">
+        <div id="idk-where-to-start" class="flex-row">
           <p>I don't even know where to start...</p>
         </div>
         <!-- development -->
-        <div class="section">
+        <div class="flex-column">
           <div class="interests-title">
             <h3>Development!</h3>
           </div>
-          <div id="development-box">
+          <div id="development-box" class="flex-column">
             <div id="development-box-top">
               <p>I mainly program in Rust</p>
               <a href="https://www.rust-lang.org/" class="eeto">
@@ -552,7 +552,7 @@
               created:
             </p>
             <!-- showcase box -->
-            <div class="section">
+            <div class="flex-column">
               <div class="showcase-item">
                 <h4>This website!</h4>
                 <p>A personal website!</p>
@@ -588,7 +588,7 @@
           </div>
         </div>
         <!-- gaming -->
-        <div class="section">
+        <div class="flex-column">
           <div class="interests-title">
             <h3>Gaming!</h3>
           </div>
@@ -616,12 +616,12 @@
           </div>
         </div>
         <!-- others -->
-        <div class="section">
+        <div class="flex-column">
           <div class="interests-title">
             <h3>I do other things as well!</h3>
           </div>
-          <div id="others-box">
-            <div id="others-box-top" class="others-panel">
+          <div id="others-box" class="flex-column">
+            <div id="others-box-top" class="others-panel flex-row">
               <div id="jack-of-all-trades">
                 <p>Some may call me a Jack of all trades!</p>
                 <p>
@@ -630,7 +630,7 @@
                 </p>
               </div>
             </div>
-            <div id="others-box-middle">
+            <div id="others-box-middle" class="flex-row">
               <div id="others-box-middle-left" class="others-panel">
                 <h4>I do a bit of photography here and there</h4>
                 <p>My photography folder is over 200GB large!</p>
@@ -643,7 +643,7 @@
                 <p>But they're mostly just for my own enjoyment.</p>
               </div>
             </div>
-            <div id="others-box-bottom" class="others-panel">
+            <div id="others-box-bottom" class="others-panel flex-row">
               <p>
                 In my free time
                 <em>I like walking</em>... A lot!
@@ -656,7 +656,7 @@
         </div>
       </div>
       <!-- contact -->
-      <div id="contact-section" class="section">
+      <div id="contact-section" class="flex-column">
         <h2>Here are some ways of contacting me!</h2>
         <div class="contact-field">
           <h3>Mail:</h3>
@@ -721,7 +721,7 @@
             </picture>
           </a>
         </div>
-        <div id="money" class="section">
+        <div id="money" class="flex-column">
           <h2>If you have way too much money, feel free to give it to me!</h2>
           <p>
             I can't guarantee exactly what the donations will go towards, but mostly
@@ -756,9 +756,9 @@
         </div>
       </div>
       <!-- meta -->
-      <div class="section">
+      <div class="flex-column">
         <!-- friends -->
-        <div id="friends-section" class="section">
+        <div id="friends-section">
           <div id="friends-title">
             <h3>While you're here, check out my friends' websites!</h3>
           </div>
@@ -811,7 +811,7 @@
         <div id="meta-title">
           <h3>Some extra info about the website:</h3>
         </div>
-        <div id="meta-box">
+        <div id="meta-box" class="flex-row">
           <div id="meta-box-left" class="meta-panel">
             <h4>This website was made in pure HTML and CSS</h4>
             <p>You don't need JavaScript!</p>
@@ -890,8 +890,7 @@
               <source srcset="assets/88x31s/avif/onzecki.avif" type="image/avif">
               <img loading="lazy" src="assets/88x31s/png/onzecki.png" alt="Image of my button." class="my-icon">
             </picture>
-            <a class="eeto" href="https://tekeye.uk/computer_history/powered-by"
-              style="display: flex; flex-direction: column">
+            <a class="eeto flex-column" href="https://tekeye.uk/computer_history/powered-by">
               <p>Here's a link describing what they are!</p>
               <picture>
                 <source srcset="assets/88x31s/jxl/88by31.jxl" type="image/jxl">
@@ -910,7 +909,7 @@
               </picture>
             </a>
           </div>
-          <div id="meta-box-right" class="meta-panel">
+          <div id="meta-box-right" class="meta-panel flex-column">
             <h4>
               You can try making a custom theme, or otherwise break my website
               here!
@@ -941,7 +940,7 @@
     </div>
     <div id="right"></div>
   </main>
-  <footer>
+  <footer class="flex-column">
     <p>made with ❤ by onzecki</p>
     <p id="plausible-info">
       this website uses
