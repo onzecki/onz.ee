@@ -29,6 +29,9 @@ a:link {
 a:visited {
   color: color-mix(in srgb, var(--blue), var(--foreground));
 }
+a:hover{
+  animation: blink 1s ease infinite;
+}
 
 html {
   scroll-behavior: smooth;
@@ -1016,4 +1019,12 @@ footer > p > span {
   .contact-field > .eeto{
     margin-left: unset;
    }
+}
+@keyframes blink {
+  0%, 100%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.75;
+  }
 }
