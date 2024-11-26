@@ -8,8 +8,8 @@
 @font-face {
   font-family: "Monofoki";
   src: local("Monofoki"), 
-  url("../assets/fonts/Monofoki-Regular.woff2"),
-  url("https://onz.ee/assets/fonts/Monofoki-Regular.woff2");
+  url("../assets/fonts/Monofoki-Regular-Latin.woff2"),
+  url("https://onz.ee/assets/fonts/Monofoki-Regular-Latin.woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -17,8 +17,8 @@
 @font-face {
   font-family: "Sometype Mono";
   src: local("Sometype Mono"), 
-  url("../assets/fonts/SometypeMono-Bold.woff2"),
-  url("https://onz.ee/assets/fonts/SometypeMono-Bold.woff2");
+  url("../assets/fonts/SometypeMono-Bold-Latin.woff2"),
+  url("https://onz.ee/assets/fonts/SometypeMono-Bold-Latin.woff2");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
