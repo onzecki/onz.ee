@@ -848,6 +848,8 @@ main > div {
   white-space: break-spaces;
   box-shadow: 0px 0px 64px color-mix(in srgb, transparent 75%, var(--plum))
     inset;
+  background:#060413;
+  color:#eceafb;
 }
 
 #right {
