@@ -85,7 +85,7 @@ function loadTheme(){
 }
 function resetTheme(){
   localStorage.customStylesheet = null;
-  alert("Reset theme!");
+  alert("Reset theme!\nReload for changes to take effect.");
 }
 
 function insertThemeChangeButtons(){
