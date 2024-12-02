@@ -7,7 +7,7 @@ window.onload = () => {
   ) {
     switchTracking();
   }
-  if (localStorage.customStylesheet !== "null") {
+  if (localStorage.getItem("customStylesheet") !== "null" && localStorage.getItem("customStylesheet") !== null) {
     loadTheme();
   }
 };
