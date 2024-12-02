@@ -7,6 +7,9 @@ window.onload = () => {
   ) {
     switchTracking();
   }
+  if (localStorage.customStylesheet !== "null") {
+    loadTheme();
+  }
 };
 
 const isReducedMotion =
@@ -72,3 +75,22 @@ function changingLetters() {
     });
   }
 }
+
+function saveTheme(){
+  localStorage.customStylesheet = document.querySelectorAll("#meta-box-right > style")[0].innerHTML;
+  alert("Saved theme!");
+}
+function loadTheme(){
+  document.querySelectorAll("#meta-box-right > style")[0].innerHTML = localStorage.customStylesheet;
+}
+function resetTheme(){
+  localStorage.customStylesheet = null;
+  alert("Reset theme!");
+}
+
+function insertThemeChangeButtons(){
+  const styleElement = document.querySelectorAll("#meta-box-right > style")[0];
+  const buttonsHTML = '<div id="theme-buttons"><button onclick="saveTheme()">Save changes!</button><button onclick="resetTheme()">Reset it!</button></div>'
+  styleElement.insertAdjacentHTML('afterend', buttonsHTML);
+}
+insertThemeChangeButtons();

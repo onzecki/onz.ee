@@ -852,6 +852,24 @@ main > div {
   color:#eceafb;
 }
 
+#theme-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:16px;
+}
+
+#theme-buttons > button {
+  background: transparent;
+  color: var(--foreground);
+  font-family: "Monofoki", 'Courier New', Courier, monospace, Arial, Helvetica, sans-serif;
+  min-height: 48px;
+  margin: 8px;
+  flex: 1;
+  border: 1px solid var(--blue);
+  font-size: 1em;
+  cursor: pointer;
+}
+
 #right {
   flex: 15%;
 }
