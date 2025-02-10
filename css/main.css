@@ -900,14 +900,20 @@ footer > p > span {
 }
 @media (prefers-color-scheme: light) {
   :root {
-    --background: #eceafb;
+    --background: #f3f2fa;
     --foreground: #060413;
+    --violet: #403498;
+    --blue: #3e37be;
+    --plum: #e679d4;  
   }
 }
 @media (prefers-color-scheme: no-preference) {
   :root {
-    --foreground: #eceafb;
+    --violet: #7367cb;
+    --blue: #4841c8;
+    --plum: #871975;
     --background: #060413;
+    --foreground: #eceafb;
   }
 }
 @media (max-aspect-ratio: 1/1) {
